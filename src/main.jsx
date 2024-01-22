@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import App from "./App.jsx";
 import Start from "./routes/Start.jsx";
 import Home from "./routes/Home.jsx";
+import Contact from "./routes/Contact.jsx";
 
 import "./index.css";
 
@@ -22,16 +23,16 @@ const router = createBrowserRouter([
         path: "/home",
         element: <Home />,
       },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <AnimatePresence mode="wait">
-      <RouterProvider router={router}>
-        <App />
-      </RouterProvider>
-    </AnimatePresence>
+      <RouterProvider router={router} />
   </React.StrictMode>
 );

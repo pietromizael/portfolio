@@ -1,0 +1,8 @@
+.group:hover .project-url {
+  opacity: 1;
+}
+
+.project-url {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}

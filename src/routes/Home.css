@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background-color: black; /* Cor do rastro da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(38, 70, 104); /* Cor da barra de rolagem */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(16, 48, 78); /* Cor da barra de rolagem ao passar o mouse */
+
+}

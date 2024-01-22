@@ -1,17 +1,17 @@
 import About from "../components/About";
 import FixedNavbar from "../components/FixedNavbar";
-import Carousel from "../components/Carousel";
-import StacksCarousel from "../components/StacksCarousel";
+import Current from "../components/Current";
+import DivCarousels from "../components/DivCarousels";
+
+import "./Home.css";
 
 const Home = () => {
   return (
     <>
       <FixedNavbar />
       <About />
-      <div className="flex">
-        <Carousel />
-        <StacksCarousel />
-      </div>
+      <DivCarousels />
+      <Current />
     </>
   );
 };
