@@ -1,12 +1,10 @@
 const mongoose = require("mongoose");
-require("dotenv").config( {path: "db/variables.env"} );
-
-const key = process.env.MONGO_KEY;
+require("dotenv").config({ path: "db/variables.env" });
 
 async function connect() {
   try {
     await mongoose.connect(
-      `mongodb+srv://pietromizael:${key}naPT@cluster0.kvkvahc.mongodb.net`
+      `mongodb+srv://root:root@cluster0.kvkvahc.mongodb.net/?retryWrites=true&w=majority`,
     );
     console.log("Conectado ao MongoDB");
   } catch (error) {

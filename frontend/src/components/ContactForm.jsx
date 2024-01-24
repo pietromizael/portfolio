@@ -22,7 +22,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/contact", {
+      const response = await fetch("https://sa-east-1.aws.data.mongodb-api.com/app/data-sfuej/endpoint/data/v1/action/findOne", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(contact),
