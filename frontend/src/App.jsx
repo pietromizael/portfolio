@@ -4,7 +4,7 @@ import BackgroundAnimated from "./components/BackgroundAnimated";
 function App() {
   return (
     <>
-      <BackgroundAnimated />
+      <BackgroundAnimated/>
       <Outlet />
     </>
   );

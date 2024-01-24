@@ -11,7 +11,9 @@ const conn = require('./db/conn.js');
 const Contact = require('./models/Contact.js');
 conn();
 
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000
+
+app.listen(3000, '0.0.0.0', () => {
     console.log('Server on');
 });
 

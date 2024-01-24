@@ -23,7 +23,7 @@ const StartPort = () => {
 
   return (
     <>
-      <div className="shadow-2xl mb-10 shadow-slate-950 min-h-16 text-4xl rounded-lg px-10 py-5 text-white bg-gradient-to-b from-slate-800 to-transparent hover:backdrop-brightness-200 transition-all duration-300">
+      <div className="flex flex-col gap-4 shadow-2xl mt-72 mx-auto shadow-slate-950 min-h-16 text-4xl rounded-lg px-10 py-10 text-white bg-gradient-to-b from-slate-800 to-transparent hover:backdrop-brightness-200 transition-all duration-300 max-md:bg-none max-md:shadow-none max-md:hover:backdrop-brightness-100">
         <TypeIt
           as="p"
           options={{
@@ -44,8 +44,8 @@ const StartPort = () => {
           }}
         >
           <span className="text-violet-800">console</span>.
-          <span className="text-green-500">log</span>(
-          <span className="text-orange-200">"Carregando..."</span>)
+          <span className="text-green-500">log</span>
+          <span className="text-orange-200">("Carregando...)"</span>
         </TypeIt>
         <TypeIt
           as="p"
@@ -62,7 +62,7 @@ const StartPort = () => {
       <button
         onClick={handleButton}
         ref={myRef}
-        className="button-sucess px-14 py-5 text-xl bg-slate-800 text-white rounded-md opacity-0 cursor-pointer pointer-events-none hover:bg-slate-600 transition-all duration-300"
+        className="mt-10 mx-auto px-14 py-5 text-xl bg-slate-800 text-white rounded-md opacity-0 cursor-pointer pointer-events-none hover:bg-slate-600 transition-all duration-300"
       >
         Entrar
       </button>

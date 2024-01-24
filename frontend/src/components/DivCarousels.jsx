@@ -29,7 +29,7 @@ const DivCarousels = () => {
       ref={ref}
       className={`flex flex-col gap-7 max-w-container justify-center items-center my-20 mx-auto opacity-0 ${
         hasBeenView ? "animate-followDownContainer" : "opacity-0"
-      }`}
+      } max-sm:mt-96`}
     >
       <ProjectsCarousel />
       <StacksCarousel />
